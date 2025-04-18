@@ -1,0 +1,8 @@
+@use "libs/modern-normalize";
+@use "libs/font";
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
