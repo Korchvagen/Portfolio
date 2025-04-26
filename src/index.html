@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +14,16 @@
     <meta property="og:url" content="https://metatags.io/">
     <meta property="og:title" content="Портфолио">
     <meta property="og:description" content="Всем привет, я Костя и я Frontend-разработчик">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="Портфолио">
     <meta property="twitter:description" content="Всем привет, я Костя и я Frontend-разработчик">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
@@ -32,7 +35,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon//android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
@@ -43,17 +46,43 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     <aside class="sidepanel">
+        <div class="sidepanel__text">Социальные сети</div>
+        <div class="sidepanel__divider"></div>
         <ul class="sidepanel__links">
             <li><a href="#"><img src="icons/socials/github.svg" alt="github"></a></li>
             <li><a href="#"><img src="icons/socials/instagram.svg" alt="instagram"></a></li>
             <li><a href="#"><img src="icons/socials/facebook.svg" alt="facebook"></a></li>
         </ul>
-        <div class="sidepanel__divider"></div>
-        <div class="sidepanel__text"><span>Социальные сети</span></div>
     </aside>
+
+    <div class="menu">
+        <nav class="menu__block">
+            <img src="icons/close.svg" alt="close" class="menu__close">
+            <ul class="menu__links">
+                <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
+                <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
+                <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+                <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
+                <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+
+            <ul class="menu__socials">
+                <li><a href="#"><img src="icons/socials/github.svg" alt="github"></a></li>
+                <li><a href="#"><img src="icons/socials/instagram.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="icons/socials/facebook.svg" alt="facebook"></a></li>
+            </ul>
+        </nav>
+        <div class="menu__overlay"></div>
+    </div>
+
     <section class="promo">
+        <div class="burger">
+            <span></span>
+        </div>
         <div class="container">
             <div class="title title_fz16 promo__subtitle">Меня зовут Корчиков Константин</div>
             <h1 class="title title_fz48 promo__title">Я web-разработчик из города Минск</h1>
@@ -65,4 +94,5 @@
     </section>
     <script src="js/script.js"></script>
 </body>
+
 </html>
