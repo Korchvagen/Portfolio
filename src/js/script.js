@@ -14,3 +14,10 @@ closeBtn.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   menu.classList.remove('active');
 });
+
+const counters = document.querySelectorAll('.skills__rating-counter'),
+  values = document.querySelectorAll('.skills__rating-value');
+
+counters.forEach((item, i) => {
+  values[i].style.width = item.textContent;
+});
