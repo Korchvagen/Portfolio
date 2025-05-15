@@ -1,0 +1,60 @@
+@media screen and (max-width: 1300px) {
+  .sidepanel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .title {
+    &_fz48 {
+      font-size: 26px;
+    }
+  }
+
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 20px;
+    }
+  }
+
+  .promo {
+    background-position-x: 58%;
+
+    .burger {
+      right: 20px;
+    }
+
+    &__title {
+      width: 300px;
+      line-height: 39px;
+    }
+
+    &__btns {
+      margin-top: 32px;
+    }
+  }
+}
