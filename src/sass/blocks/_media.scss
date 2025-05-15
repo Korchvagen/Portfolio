@@ -8,17 +8,73 @@
   .container {
     max-width: 960px;
   }
+
+  .about {
+    &__wrapper {
+      grid-template-columns: 400px 510px;
+      column-gap: 50px;
+    }
+
+    &__skills {
+      column-gap: 20px;
+
+      &-item {
+        column-gap: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
   .container {
     max-width: 720px;
   }
+
+  .about {
+    &__wrapper {
+      grid-template-columns: 300px 380px;
+      column-gap: 40px;
+    }
+
+    .title {
+      &_fz36 {
+        font-size: 24px;
+      }
+    }
+
+    &__skills {
+      grid-template-columns: 380px;
+
+      &-item {
+        column-gap: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+
+  .about {
+    padding-top: 40px;
+
+    &__wrapper {
+      grid-template: 340px auto auto / 1fr;
+    }
+
+    .divider {
+      margin-top: 15px;
+    }
+
+    &__photo {
+      grid-row: unset;
+    }
+
+    &__skills {
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
   }
 }
 
@@ -42,7 +98,7 @@
   }
 
   .promo {
-    background-position-x: 58%;
+    background-position-x: 60%;
 
     .burger {
       right: 20px;
@@ -55,6 +111,21 @@
 
     &__btns {
       margin-top: 32px;
+    }
+  }
+
+  .about {
+    &__wrapper {
+      gap: 0;
+    }
+
+    &__descr {
+      margin-top: 46px;
+    }
+
+    &__skills {
+      margin-top: 20px;
+      grid-template-columns: 260px;
     }
   }
 }
