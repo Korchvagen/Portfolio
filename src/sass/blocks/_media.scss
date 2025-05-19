@@ -44,6 +44,22 @@
       justify-content: space-around;
     }
   }
+
+  .works {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      justify-content: space-around;
+      row-gap: 20px;
+    }
+
+    &__item {
+      &_horizontal,
+      &_vertical {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -80,10 +96,6 @@
   }
 
   .skills {
-    // &__items {
-    //   grid-template-columns: repeat(2, 270px);
-    // }
-
     &__ratings {
       grid-template-columns: repeat(auto-fit, 300px);
     }
@@ -147,6 +159,14 @@
       margin-top: 46px;
       justify-content: center;
       row-gap: 46px;
+    }
+  }
+
+  .works {
+    padding-top: 46px;
+
+    &__wrapper {
+      margin-top: 40px;
     }
   }
 }
