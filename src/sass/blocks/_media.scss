@@ -53,6 +53,7 @@
     }
 
     &__item {
+
       &_horizontal,
       &_vertical {
         grid-row: unset;
@@ -98,6 +99,13 @@
   .skills {
     &__ratings {
       grid-template-columns: repeat(auto-fit, 300px);
+    }
+  }
+
+  .price {
+    &__wrapper {
+      padding: 0;
+      grid-template-columns: repeat(auto-fit, 320px);
     }
   }
 }
@@ -167,6 +175,15 @@
 
     &__wrapper {
       margin-top: 40px;
+    }
+  }
+
+  .price {
+    &__wrapper {
+      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, 275px);
+      justify-content: center;
+      padding-left: 25px;
     }
   }
 }
